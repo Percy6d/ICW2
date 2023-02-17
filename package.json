@@ -1,0 +1,11 @@
+{
+    "name": "mongo-demo",
+    "scripts": {
+        "start": "node rest.js" 
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "mongodb": "^4.13.0"
+    }
+}
+
