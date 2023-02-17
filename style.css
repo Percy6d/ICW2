@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#app {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    padding-right: 5px;
+    cursor: pointer;
+}
+input {
+    padding: 4px 12px;
+    color: rgba(0,0,0,.70);
+    border: 1px solid rgba(0,0,0,.12);
+    transition: .15s all ease-in-out;
+    background: white;
+   
+}
+.container{
+    height: 50vh;
+    display: grid;
+    max-width: 90vw;
+    grid-template-columns: 310px 310px 310px ;
+    grid-gap: 1rem;
+    margin: 30px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartButton{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.paragraph{
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 1px 3px 16px 10px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    border: 0.4px solid blue;
+    position: relative;
+    max-height: 200px;
+    width: 300px;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+button{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10%;
+    border: none;
+    background-color: rgb(47, 98, 181);
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+button:disabled{
+    background-color: rgb(184, 184, 255);
+
+}
+
+.image{
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    padding: 10px; 
+    margin-left: -5px; 
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+}
+.name{
+    padding: 20px;
+}
+
+.number{
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container{
+    grid-template-columns: auto auto;
+    }
+}
