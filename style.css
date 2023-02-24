@@ -9,6 +9,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50vh;
+    display: grid;
+    max-width: 90vw;
+    grid-template-columns: 310px 310px 310px ;
+    grid-gap: 1rem;
+    margin: 30px;
+
 }
 label{
     padding-right: 5px;

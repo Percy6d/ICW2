@@ -89,7 +89,7 @@ app.put('/collection/:collectionName/:id', (req, res, next) => {
         })
 })
 
-app.put("/collection/:collectionName/:id", (req, res) => {
+app.put("/lesson/:id", (req, res) => {
     lessonCollection
       .findOneAndUpdate(
         { id: req.params._id },
@@ -111,7 +111,7 @@ app.put("/collection/:collectionName/:id", (req, res) => {
   });
 
 // Search Function
-app.get("/collection/:collectionName/search", (req, res) => {
+app.get("/search", (req, res) => {
     let search_keyword = req.query.search;
     req.lessonCollection.find({}).toArray((err, results) => {
       if (err) return next(err);
@@ -129,6 +129,12 @@ app.get("/collection/:collectionName/search", (req, res) => {
 
 // app.use(express.json({ limit:'1mb' }));
 
+// app.post('/collection/:collectionName', (req, res, next) => {  
+//     req.collection.insertOne(req.body, (e, results) => {
+//         if (e) return next(e)    
+//         res.send(results.ops)  
+//     })
+// })
 // const options = {
 //     method: 'POST',
 //     headers: {
